@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sertifikat - Luthfan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logo-box">
+  <span class="logo-text">Luthfan_Wj</span>
+</div>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="Beranda.html" class="nav-item">HOME</a>
+    <a href="ABOUTME.html" class="nav-item">ABOUT ME</a>
+    <a href="SKILS.html" class="nav-item">SKILS</a>
+    <a href="CERTIFICATE.html" class="nav-item active">CERTIFICATE</a>
+    <a href="CONTACT.html" class="nav-item">CONTACT</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <section class="page-header">
+      <h2>Sertifikat</h2>
+      <p>Klik salah satu kategori di bawah untuk melihat sertifikat saya.</p>
+    </section>
+
+    <!-- TOMBOL SERTIFIKAT -->
+    <div class="cert-buttons">
+      <a href="aguna.html" class="cert-btn aguna">Aguna Course</a>
+      <a href="redhat.html" class="cert-btn redhat">RedHat</a>
+      <a href="fortinet.html" class="cert-btn fortinet">Fortinet</a>
+      <a href="ccna.html" class="cert-btn ccna">CCNA</a>
+      <a href="others.html" class="cert-btn others">Others</a>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  
+  <!-- JS UNTUK EFECT TAMBAHAN (Opsional) -->
+  <script>
+    // Efek muncul saat scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('.cert-btn');
+      
+      buttons.forEach((btn, index) => {
+        btn.style.opacity = '0';
+        btn.style.transform = 'translateY(30px)';
+        
+        setTimeout(() => {
+          btn.style.transition = 'all 0.6s ease';
+          btn.style.opacity = '1';
+          btn.style.transform = 'translateY(0)';
+        }, index * 100);
+      });
+    });
+  </script>
+<footer>
+  <p>© 2025 ahmadluthfanwijayana.all rights reversed</p>
+</footer>
+</body>
+</html>
