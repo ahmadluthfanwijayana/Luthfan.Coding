@@ -989,3 +989,79 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(100, 255, 218, 0.4);
 }
+/* ============== CONTACT PAGE STYLES ============== */
+
+.social-section {
+    margin: 30px 0;
+}
+
+.social-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-header h2 {
+    color: #64ffda;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.social-header p {
+    color: #e6f1ff;
+    font-size: 1.1em;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    background: #112240;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.social-item:hover {
+    transform: translateY(-5px);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ccd6f6;
+    width: 100%;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-text {
+    font-size: 1em;
+    color: #e6f1ff;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover .social-text {
+    color: #64ffda;
+}
+.social-icon {
+    width: 50px;
+    height: 50px;
+}
