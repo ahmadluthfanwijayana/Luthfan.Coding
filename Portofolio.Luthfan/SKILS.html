@@ -1,68 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Luthfan Wijayana</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Luthfan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="Beranda.html" class="nav-item">HOME</a>
-            <a href="ABOUTME.html" class="nav-item">ABOUT ME</a>
-            <a href="SKILS.html" class="nav-item active">SKILS</a>
-            <a href="CERTIFICATE.html" class="nav-item">CERTIFICATE</a>
-            <a href="CONTACT.html" class="nav-item">CONTACT</a>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="Beranda.html" class="nav-item">HOME</a>
+    <a href="ABOUTME.html" class="nav-item">ABOUT ME</a>
+    <a href="SKILS.html" class="nav-item active">SKILS</a>
+    <a href="CERTIFICATE.html" class="nav-item">CERTIFICATE</a>
+    <a href="CONTACT.html" class="nav-item">CONTACT</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- JUDUL -->
+    <section class="skills-header">
+      <h2>Technical Skills</h2>
+      <p>Berikut adalah keterampilan teknis yang saya kuasai dalam bidang jaringan dan IT:</p>
+    </section>
+
+    <!-- KOTAK LOGO -->
+    <section class="skill-cards">
+      <!-- MikroTik -->
+      <div class="skill-card" data-skills="mikrotik">
+        <img src="/mkrtik.jpg" alt="MikroTik" class="skill-icon">
+        <h3>MikroTik</h3>
+        <div class="skill-details">
+          <p>• Router & Switch Configuration</p>
+          <p>• MTCNA Level</p>
+          <p>• LAN/WAN Design & Implementation</p>
+          <p>• VLAN, STP, OSPF, BGP</p>
+          <p>• Firewall & Security Policy (ACL, NAT)</p>
         </div>
-    </header>
-<div class="logo-box">
-  <span class="logo-text">Luthfan_Wj</span>
-</div>
-    <main class="main-content">
-        <div class="profile-section">
-            <div class="profile-circle">
-                <img src="https://via.placeholder.com/220" alt="Luthfan Wijayana">
-            </div>
+      </div>
+
+      <!-- Debian Linux -->
+      <div class="skill-card" data-skills="debian">
+        <img src="/deb.jpg" alt="Debian Linux" class="skill-icon">
+        <h3>Debian Linux</h3>
+        <div class="skill-details">
+          <p>• Installation & Configuration</p>
+          <p>• Package Management (apt)</p>
+          <p>• Shell Scripting & Automation</p>
+          <p>• Network Services (DNS, DHCP, SSH)</p>
+          <p>• System Monitoring & Troubleshooting</p>
         </div>
+      </div>
 
-        <div class="text-section">
-            <h2>Technical Skills</h2>
-            <p>Berikut adalah keterampilan teknis yang saya kuasai dalam bidang jaringan dan IT:</p>
-
-            <div class="skill-category">
-                <h3>🌐 Networking</h3>
-                <ul>
-                    <li>Cisco Router & Switch Configuration</li>
-                    <li>MikroTik (MTCNA Level)</li>
-                    <li>LAN/WAN Design & Implementation</li>
-                    <li>VLAN, STP, OSPF, BGP</li>
-                    <li>Firewall & Security Policy (ACL, NAT)</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>☁️ Cloud & Virtualization</h3>
-                <ul>
-                    <li>AWS VPC & Networking Services</li>
-                    <li>VMware vSphere</li>
-                    <li>Docker Networking</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>🛠️ Tools & OS</h3>
-                <ul>
-                    <li>Windows Server, Linux (Ubuntu, CentOS)</li>
-                    <li>Wireshark, PRTG, SolarWinds</li>
-                    <li>Git, PowerShell, Bash Scripting</li>
-                </ul>
-            </div>
+      <!-- Windows -->
+      <div class="skill-card" data-skills="windows">
+        <img src="/win.jpg" alt="Windows" class="skill-icon">
+        <h3>Windows</h3>
+        <div class="skill-details">
+          <p>• Windows Server Administration</p>
+          <p>• Active Directory & Group Policy</p>
+          <p>• DNS, DHCP, File Sharing</p>
+          <p>• Backup & Recovery</p>
+          <p>• User & Permission Management</p>
         </div>
-    </main>
+      </div>
 
+      <!-- AWS -->
+      <div class="skill-card" data-skills="aws">
+        <img src="/aws.jpg" alt="AWS" class="skill-icon">
+        <h3>AWS</h3>
+        <div class="skill-details">
+          <p>• VPC & Networking Services</p>
+          <p>• EC2, S3, RDS</p>
+          <p>• IAM & Security Policies</p>
+          <p>• CloudFormation & Deployment</p>
+          <p>• Monitoring with CloudWatch</p>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-card" data-skills="web">
+        <img src="/web.jpg" alt="HTML CSS JS" class="skill-icon">
+        <h3>Web Development</h3>
+        <div class="skill-details">
+          <p>• HTML5, CSS3, JavaScript</p>
+          <p>• Responsive Design (Bootstrap)</p>
+          <p>• DOM Manipulation & Events</p>
+          <p>• Basic API Integration</p>
+          <p>• Version Control (Git)</p>
+        </div>
+      </div>
+
+      <!-- Cisco Packet Tracer -->
+      <div class="skill-card" data-skills="cisco">
+        <img src="/cisco.jpg" alt="Cisco Packet Tracer" class="skill-icon">
+        <h3>Cisco Packet Tracer</h3>
+        <div class="skill-details">
+          <p>• Network Simulation & Design</p>
+          <p>• Router & Switch Configuration</p>
+          <p>• VLAN & Inter-VLAN Routing</p>
+          <p>• ACL & Security Policies</p>
+          <p>• Troubleshooting & Testing</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-  <p>© 2025 ahmadluthfanwijayana.all rights reversed</p>
-</footer>
+    <p>© 2025 ahmadluthfanwijayana.all rights reversed</p>
+  </footer>
+
 </body>
 </html>
